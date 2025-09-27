@@ -1,0 +1,6 @@
+save questions to localstorage with a modal and popup
+allow the user to get the data from questions stored in localstorage for review
+add a speedrun mode where the user has to answer as many questions as possible in a time limit
+add more languages like Python, Java, etc.
+add a dark mode toggle
+add animations and transitions for a more engaging user experience

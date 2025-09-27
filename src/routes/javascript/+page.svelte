@@ -8,6 +8,7 @@
 	let currentQuestion = $state(0);
 	let usedQuestions = $state<number[]>([]);
 	let allQuestionsCompleted = $state(false);
+	let completedQuestionsCount = $state(0);
 
 	function getRandomQuestion() {
 		// Get available questions (not used yet)
@@ -28,6 +29,7 @@
 
 	function getNextQuestion() {
 		const newQuestion = getRandomQuestion();
+		completedQuestionsCount += 1;
 		if (newQuestion !== null) {
 			usedQuestions = [...usedQuestions, newQuestion];
 			currentQuestion = newQuestion;
@@ -65,6 +67,14 @@
 	<span class="mb-4 text-xl text-gray-300">
 		Progress: {usedQuestions.length} / {data.length}
 	</span>
+	<input
+		type="range"
+		min="0"
+		max={data.length - 1}
+		value={completedQuestionsCount}
+		disabled={true}
+		class="w-full accent-green-500"
+	/>
 
 	<Question
 		question={String(data[currentQuestion].question)}
