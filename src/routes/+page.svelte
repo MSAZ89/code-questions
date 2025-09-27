@@ -62,9 +62,9 @@
 		</button>
 	</div>
 {:else}
-	<div class="mb-4 text-xl text-gray-300">
+	<span class="mb-4 text-xl text-gray-300">
 		Progress: {usedQuestions.length} / {data.length}
-	</div>
+	</span>
 
 	<Question
 		question={String(data[currentQuestion].question)}
