@@ -5,11 +5,9 @@
 	function validateAnswer(selected: string) {
 		if (selected === correctAnswer) {
 			answerCorrect = true;
-			alert('Correct!');
 			console.log('Selected:', selected, 'Correct:', correctAnswer);
 		} else {
 			answerCorrect = false;
-			alert('Incorrect. Try again.');
 			console.log('Selected:', selected, 'Correct:', correctAnswer);
 		}
 	}
