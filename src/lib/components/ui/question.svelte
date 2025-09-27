@@ -11,14 +11,19 @@
 	let wrongCount = $state(0);
 	let correctCount = $state(0);
 
+	let respondedIncorrectly = $state(false);
+
 	function validateAnswer(selected: string) {
 		if (selected === correctAnswer) {
 			isResponseCorrect = true;
-			correctCount += 1;
+			if (!respondedIncorrectly) {
+				correctCount += 1;
+			}
 			console.log('Selected:', selected, 'Correct:', correctAnswer);
 		} else {
 			isResponseCorrect = false;
 			wrongCount += 1;
+			respondedIncorrectly = true;
 			console.log('Selected:', selected, 'Correct:', correctAnswer);
 		}
 	}
@@ -26,6 +31,7 @@
 	function advanceCorrectQuestion() {
 		onCorrectAnswer();
 		isResponseCorrect = null; // Reset for next question
+		respondedIncorrectly = false;
 	}
 </script>
 

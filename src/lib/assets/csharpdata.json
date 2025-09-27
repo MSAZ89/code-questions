@@ -1,0 +1,437 @@
+[
+	{
+		"question": "What is the correct way to declare an integer variable in C#?",
+		"answers": ["int myVar;", "integer myVar;", "Int myVar;", "number myVar;"],
+		"correctAnswer": "int myVar;",
+		"difficulty": "easy"
+	},
+	{
+		"question": "Which keyword is used to create a class in C#?",
+		"answers": ["class", "Class", "create", "new"],
+		"correctAnswer": "class",
+		"difficulty": "easy"
+	},
+	{
+		"question": "What does 'static' mean in C#?",
+		"answers": [
+			"Belongs to class, not instance",
+			"Cannot be changed",
+			"Private member",
+			"Final value"
+		],
+		"correctAnswer": "Belongs to class, not instance",
+		"difficulty": "easy"
+	},
+	{
+		"question": "Which access modifier makes a member accessible everywhere?",
+		"answers": ["public", "private", "protected", "internal"],
+		"correctAnswer": "public",
+		"difficulty": "easy"
+	},
+	{
+		"question": "What is the entry point of a C# console application?",
+		"answers": ["Main method", "Start method", "Begin method", "Run method"],
+		"correctAnswer": "Main method",
+		"difficulty": "easy"
+	},
+	{
+		"question": "How do you create a single-line comment in C#?",
+		"answers": ["//", "/*", "#", "<!--"],
+		"correctAnswer": "//",
+		"difficulty": "easy"
+	},
+	{
+		"question": "What is the correct syntax for a for loop in C#?",
+		"answers": [
+			"for(int i=0; i<10; i++)",
+			"for i=0 to 10",
+			"for(i in range(10))",
+			"foreach i in 10"
+		],
+		"correctAnswer": "for(int i=0; i<10; i++)",
+		"difficulty": "easy"
+	},
+	{
+		"question": "Which keyword is used for inheritance in C#?",
+		"answers": [":", "extends", "inherits", "base"],
+		"correctAnswer": ":",
+		"difficulty": "easy"
+	},
+	{
+		"question": "What does 'void' mean in a method declaration?",
+		"answers": ["Returns nothing", "Returns null", "Private method", "Static method"],
+		"correctAnswer": "Returns nothing",
+		"difficulty": "easy"
+	},
+	{
+		"question": "How do you declare a string array in C#?",
+		"answers": ["string[] arr;", "String arr[];", "array<string> arr;", "string arr{};"],
+		"correctAnswer": "string[] arr;",
+		"difficulty": "easy"
+	},
+	{
+		"question": "What is the default value of a bool variable in C#?",
+		"answers": ["false", "true", "null", "0"],
+		"correctAnswer": "false",
+		"difficulty": "medium"
+	},
+	{
+		"question": "Which collection allows duplicate values in C#?",
+		"answers": ["List<T>", "HashSet<T>", "Dictionary<K,V>", "SortedSet<T>"],
+		"correctAnswer": "List<T>",
+		"difficulty": "medium"
+	},
+	{
+		"question": "What is boxing in C#?",
+		"answers": [
+			"Value type to reference type",
+			"Reference to value type",
+			"Memory allocation",
+			"Type casting"
+		],
+		"correctAnswer": "Value type to reference type",
+		"difficulty": "medium"
+	},
+	{
+		"question": "Which interface do you implement for foreach loops?",
+		"answers": ["IEnumerable", "ICollection", "IList", "IQueryable"],
+		"correctAnswer": "IEnumerable",
+		"difficulty": "medium"
+	},
+	{
+		"question": "What does the 'sealed' keyword do?",
+		"answers": ["Prevents inheritance", "Makes readonly", "Creates singleton", "Hides member"],
+		"correctAnswer": "Prevents inheritance",
+		"difficulty": "medium"
+	},
+	{
+		"question": "What is the difference between '==' and 'Equals()' in C#?",
+		"answers": [
+			"== is reference, Equals is value",
+			"Same thing",
+			"== is faster",
+			"Equals is deprecated"
+		],
+		"correctAnswer": "== is reference, Equals is value",
+		"difficulty": "medium"
+	},
+	{
+		"question": "What is a delegate in C#?",
+		"answers": ["Type that represents method refs", "Abstract class", "Interface", "Generic type"],
+		"correctAnswer": "Type that represents method refs",
+		"difficulty": "medium"
+	},
+	{
+		"question": "What does 'ref' keyword do in parameters?",
+		"answers": ["Passes by reference", "Makes readonly", "Creates copy", "Nullable parameter"],
+		"correctAnswer": "Passes by reference",
+		"difficulty": "medium"
+	},
+	{
+		"question": "What is the purpose of 'using' statement?",
+		"answers": [
+			"Automatic resource disposal",
+			"Import namespace",
+			"Create alias",
+			"Exception handling"
+		],
+		"correctAnswer": "Automatic resource disposal",
+		"difficulty": "medium"
+	},
+	{
+		"question": "What is an abstract class in C#?",
+		"answers": [
+			"Cannot be instantiated",
+			"Interface with implementation",
+			"Sealed class",
+			"Static class"
+		],
+		"correctAnswer": "Cannot be instantiated",
+		"difficulty": "medium"
+	},
+	{
+		"question": "What is the difference between 'out' and 'ref' parameters?",
+		"answers": [
+			"out doesn't need initialization",
+			"ref is faster",
+			"out is readonly",
+			"No difference"
+		],
+		"correctAnswer": "out doesn't need initialization",
+		"difficulty": "medium"
+	},
+	{
+		"question": "What is a property in C#?",
+		"answers": [
+			"Encapsulated field access",
+			"Public field",
+			"Method return value",
+			"Class attribute"
+		],
+		"correctAnswer": "Encapsulated field access",
+		"difficulty": "medium"
+	},
+	{
+		"question": "What does 'virtual' keyword enable?",
+		"answers": ["Method overriding", "Multiple inheritance", "Static binding", "Memory allocation"],
+		"correctAnswer": "Method overriding",
+		"difficulty": "medium"
+	},
+	{
+		"question": "What is the 'params' keyword used for?",
+		"answers": [
+			"Variable number of arguments",
+			"Parameter validation",
+			"Optional parameters",
+			"Reference parameters"
+		],
+		"correctAnswer": "Variable number of arguments",
+		"difficulty": "medium"
+	},
+	{
+		"question": "What is the difference between Array and ArrayList?",
+		"answers": [
+			"Array is typed, ArrayList isn't",
+			"ArrayList is faster",
+			"Array is dynamic",
+			"No difference"
+		],
+		"correctAnswer": "Array is typed, ArrayList isn't",
+		"difficulty": "medium"
+	},
+	{
+		"question": "What is a generic constraint in C#?",
+		"answers": [
+			"where T : BaseClass",
+			"T extends BaseClass",
+			"T implements Interface",
+			"T inherits BaseClass"
+		],
+		"correctAnswer": "where T : BaseClass",
+		"difficulty": "hard"
+	},
+	{
+		"question": "What is the yield keyword used for?",
+		"answers": ["Iterator methods", "Async operations", "Exception handling", "Memory management"],
+		"correctAnswer": "Iterator methods",
+		"difficulty": "hard"
+	},
+	{
+		"question": "What is covariance in C# generics?",
+		"answers": ["out T parameter", "in T parameter", "ref T parameter", "where T constraint"],
+		"correctAnswer": "out T parameter",
+		"difficulty": "hard"
+	},
+	{
+		"question": "What does the 'volatile' keyword do?",
+		"answers": [
+			"Prevents compiler optimization",
+			"Makes thread-safe",
+			"Creates immutable",
+			"Enables GC"
+		],
+		"correctAnswer": "Prevents compiler optimization",
+		"difficulty": "hard"
+	},
+	{
+		"question": "What is the difference between Task and Thread?",
+		"answers": [
+			"Task is higher-level abstraction",
+			"Thread is newer",
+			"Task is slower",
+			"No difference"
+		],
+		"correctAnswer": "Task is higher-level abstraction",
+		"difficulty": "hard"
+	},
+	{
+		"question": "What is expression tree in C#?",
+		"answers": ["Code as data structure", "Binary tree", "Syntax tree", "Call stack"],
+		"correctAnswer": "Code as data structure",
+		"difficulty": "hard"
+	},
+	{
+		"question": "What is the purpose of 'lock' statement?",
+		"answers": ["Thread synchronization", "Memory lock", "Variable protection", "GC prevention"],
+		"correctAnswer": "Thread synchronization",
+		"difficulty": "hard"
+	},
+	{
+		"question": "What is contravariance in C# generics?",
+		"answers": ["in T parameter", "out T parameter", "ref T parameter", "where T constraint"],
+		"correctAnswer": "in T parameter",
+		"difficulty": "hard"
+	},
+	{
+		"question": "What is the difference between IEnumerable and IQueryable?",
+		"answers": [
+			"IQueryable supports LINQ to SQL",
+			"IEnumerable is faster",
+			"IQueryable is deprecated",
+			"No difference"
+		],
+		"correctAnswer": "IQueryable supports LINQ to SQL",
+		"difficulty": "hard"
+	},
+	{
+		"question": "What is a weak reference in C#?",
+		"answers": ["Doesn't prevent GC", "Null reference", "Circular reference", "Static reference"],
+		"correctAnswer": "Doesn't prevent GC",
+		"difficulty": "hard"
+	},
+	{
+		"question": "What is the 'dynamic' keyword in C#?",
+		"answers": [
+			"Runtime type resolution",
+			"Compile-time binding",
+			"Memory allocation",
+			"Thread safety"
+		],
+		"correctAnswer": "Runtime type resolution",
+		"difficulty": "hard"
+	},
+	{
+		"question": "What is the difference between 'as' and cast operators?",
+		"answers": [
+			"as returns null on failure",
+			"as is faster",
+			"cast is deprecated",
+			"No difference"
+		],
+		"correctAnswer": "as returns null on failure",
+		"difficulty": "hard"
+	},
+	{
+		"question": "What is a finalizer in C#?",
+		"answers": ["~ClassName() destructor", "Dispose() method", "Constructor", "Static method"],
+		"correctAnswer": "~ClassName() destructor",
+		"difficulty": "hard"
+	},
+	{
+		"question": "What is the 'async/await' pattern used for?",
+		"answers": [
+			"Asynchronous programming",
+			"Thread creation",
+			"Memory management",
+			"Exception handling"
+		],
+		"correctAnswer": "Asynchronous programming",
+		"difficulty": "hard"
+	},
+	{
+		"question": "What is method group conversion?",
+		"answers": [
+			"Method to delegate conversion",
+			"Type casting",
+			"Method overloading",
+			"Generic method"
+		],
+		"correctAnswer": "Method to delegate conversion",
+		"difficulty": "hard"
+	},
+	{
+		"question": "What is the 'nameof' operator used for?",
+		"answers": [
+			"Gets identifier name as string",
+			"Type information",
+			"Reflection",
+			"String interpolation"
+		],
+		"correctAnswer": "Gets identifier name as string",
+		"difficulty": "hard"
+	},
+	{
+		"question": "What is a nullable reference type?",
+		"answers": [
+			"Reference type that can be null",
+			"Value type wrapper",
+			"Generic constraint",
+			"Memory optimization"
+		],
+		"correctAnswer": "Reference type that can be null",
+		"difficulty": "hard"
+	},
+	{
+		"question": "What is the 'stackalloc' keyword?",
+		"answers": [
+			"Allocates memory on stack",
+			"Creates array",
+			"Heap allocation",
+			"Thread-local storage"
+		],
+		"correctAnswer": "Allocates memory on stack",
+		"difficulty": "hard"
+	},
+	{
+		"question": "What is span<T> in C#?",
+		"answers": [
+			"Type-safe memory representation",
+			"Generic collection",
+			"Thread wrapper",
+			"Exception type"
+		],
+		"correctAnswer": "Type-safe memory representation",
+		"difficulty": "hard"
+	},
+	{
+		"question": "What is the 'in' parameter modifier?",
+		"answers": [
+			"Readonly reference parameter",
+			"Input parameter",
+			"Optional parameter",
+			"Generic constraint"
+		],
+		"correctAnswer": "Readonly reference parameter",
+		"difficulty": "hard"
+	},
+	{
+		"question": "What is a record type in C#?",
+		"answers": ["Immutable reference type", "Value type", "Abstract class", "Interface"],
+		"correctAnswer": "Immutable reference type",
+		"difficulty": "hard"
+	},
+	{
+		"question": "What is pattern matching in C#?",
+		"answers": [
+			"switch expressions with patterns",
+			"Regular expressions",
+			"String matching",
+			"Type checking"
+		],
+		"correctAnswer": "switch expressions with patterns",
+		"difficulty": "hard"
+	},
+	{
+		"question": "What is the 'init' accessor?",
+		"answers": [
+			"Set property during initialization",
+			"Constructor helper",
+			"Readonly property",
+			"Static initializer"
+		],
+		"correctAnswer": "Set property during initialization",
+		"difficulty": "hard"
+	},
+	{
+		"question": "What is a local function in C#?",
+		"answers": [
+			"Function defined inside method",
+			"Private method",
+			"Lambda expression",
+			"Anonymous method"
+		],
+		"correctAnswer": "Function defined inside method",
+		"difficulty": "hard"
+	},
+	{
+		"question": "What is the 'unmanaged' constraint?",
+		"answers": [
+			"Restricts to unmanaged types",
+			"Memory constraint",
+			"Thread constraint",
+			"Performance hint"
+		],
+		"correctAnswer": "Restricts to unmanaged types",
+		"difficulty": "hard"
+	}
+]

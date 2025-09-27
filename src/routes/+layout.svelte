@@ -1,6 +1,7 @@
 <script lang="ts">
 	import '../app.css';
 	import favicon from '$lib/assets/favicon.svg';
+	import Topmenu from '$lib/components/topmenu.svelte';
 
 	let { children } = $props();
 </script>
@@ -9,6 +10,7 @@
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
-<div class="min-h-screen bg-black p-8">
+<main class="min-h-screen bg-black p-2">
+	<Topmenu />
 	{@render children?.()}
-</div>
+</main>
