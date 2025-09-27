@@ -6,18 +6,18 @@
 		difficulty = '',
 		onCorrectAnswer = () => {}
 	} = $props();
-	let answerCorrect: boolean | null = $state(null);
+	let isResponseCorrect: boolean | null = $state(null);
 
 	let wrongCount = $state(0);
 	let correctCount = $state(0);
 
 	function validateAnswer(selected: string) {
 		if (selected === correctAnswer) {
-			answerCorrect = true;
+			isResponseCorrect = true;
 			correctCount += 1;
 			console.log('Selected:', selected, 'Correct:', correctAnswer);
 		} else {
-			answerCorrect = false;
+			isResponseCorrect = false;
 			wrongCount += 1;
 			console.log('Selected:', selected, 'Correct:', correctAnswer);
 		}
@@ -25,11 +25,11 @@
 
 	function advanceCorrectQuestion() {
 		onCorrectAnswer();
-		answerCorrect = null; // Reset for next question
+		isResponseCorrect = null; // Reset for next question
 	}
 </script>
 
-{#if answerCorrect === true}
+{#if isResponseCorrect === true}
 	<button
 		class="rounded bg-green-500 px-2 py-1 text-white hover:cursor-pointer hover:bg-green-600"
 		onclick={advanceCorrectQuestion}
@@ -59,9 +59,9 @@
 				<div class="grid grid-cols-2 gap-2 sm:grid-cols-2">
 					{#each answers as answer}
 						<button
-							disabled={answerCorrect === true}
+							disabled={isResponseCorrect === true}
 							class="rounded px-2 py-4 text-white hover:cursor-pointer sm:text-xl
-		{answerCorrect !== null
+		{isResponseCorrect !== null
 								? answer === correctAnswer
 									? 'bg-green-500 shadow-lg shadow-green-200 disabled:cursor-not-allowed disabled:bg-green-500 disabled:text-white'
 									: 'bg-gray-300 text-gray-500 disabled:cursor-not-allowed disabled:bg-gray-300 disabled:text-gray-500'
@@ -75,9 +75,9 @@
 			{/if}
 		</div>
 	{/if}
-	{#if answerCorrect === true}
+	{#if isResponseCorrect === true}
 		<p class="mt-2 text-center text-xl font-bold text-green-600">Correct!</p>
-	{:else if answerCorrect === false}
+	{:else if isResponseCorrect === false}
 		<p class="mt-2 text-center text-xl font-bold text-red-600">Incorrect. Try again.</p>
 	{/if}
 </div>
