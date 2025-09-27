@@ -90,7 +90,7 @@
 		</div>
 	{:else if isResponseCorrect === false}
 		<div transition:fly={{ y: -20, duration: 400, delay: 100, easing: quintOut }}>
-			<p class="mt-2 text-center text-xl font-bold text-red-600">Incorrect. Try again.</p>
+			<p class="mt-2 text-center text-xl font-bold text-red-600">Incorrect.</p>
 		</div>
 	{/if}
 </div>
