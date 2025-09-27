@@ -27,5 +27,12 @@
 	>
 		C#
 	</a>
+	<a
+		href="/python"
+		class:text-yellow-400={isActive('/python')}
+		class:font-bold={isActive('/python')}
+	>
+		Python
+	</a>
 	<a href="/" class:text-yellow-400={isActive('/')} class:font-bold={isActive('/')}> Home </a>
 </div>
