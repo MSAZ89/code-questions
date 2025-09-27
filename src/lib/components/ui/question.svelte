@@ -95,4 +95,7 @@
 	<p class="mb-2 text-sm text-red-600">
 		Wrong: {wrongCount}
 	</p>
+	<p class="mb-2 text-sm text-yellow-600">
+		Total Attempts: {correctCount + wrongCount}
+	</p>
 </div>
