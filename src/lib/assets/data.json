@@ -1,56 +1,368 @@
 [
 	{
-		"question": "What is the capital of France?",
-		"answers": ["Berlin", "Madrid", "Paris", "Rome"],
-		"correctAnswer": "Paris",
+		"question": "What is the correct way to declare a variable in JavaScript?",
+		"answers": ["var myVar;", "variable myVar;", "v myVar;", "declare myVar;"],
+		"correctAnswer": "var myVar;",
 		"difficulty": "easy"
 	},
 	{
-		"question": "Which planet is known as the Red Planet?",
-		"answers": ["Earth", "Mars", "Jupiter", "Saturn"],
-		"correctAnswer": "Mars",
+		"question": "Which of the following is NOT a JavaScript data type?",
+		"answers": ["string", "boolean", "float", "undefined"],
+		"correctAnswer": "float",
 		"difficulty": "easy"
 	},
 	{
-		"question": "What is the largest ocean on Earth?",
-		"answers": ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"],
-		"correctAnswer": "Pacific Ocean",
+		"question": "What does '===' check in JavaScript?",
+		"answers": ["Value only", "Type only", "Both value and type", "Reference only"],
+		"correctAnswer": "Both value and type",
 		"difficulty": "medium"
 	},
 	{
-		"question": "Who wrote 'To Kill a Mockingbird'?",
-		"answers": ["Harper Lee", "Mark Twain", "F. Scott Fitzgerald", "Ernest Hemingway"],
-		"correctAnswer": "Harper Lee",
+		"question": "How do you create a function in JavaScript?",
+		"answers": [
+			"function myFunction() {}",
+			"create myFunction() {}",
+			"def myFunction() {}",
+			"function = myFunction() {}"
+		],
+		"correctAnswer": "function myFunction() {}",
+		"difficulty": "easy"
+	},
+	{
+		"question": "What will 'typeof null' return?",
+		"answers": ["null", "undefined", "object", "boolean"],
+		"correctAnswer": "object",
 		"difficulty": "medium"
 	},
 	{
-		"question": "What is the powerhouse of the cell?",
-		"answers": ["Nucleus", "Mitochondria", "Ribosome", "Endoplasmic Reticulum"],
-		"correctAnswer": "Mitochondria",
+		"question": "Which method adds an element to the end of an array?",
+		"answers": ["push()", "pop()", "shift()", "unshift()"],
+		"correctAnswer": "push()",
 		"difficulty": "easy"
 	},
 	{
-		"question": "What is the chemical symbol for gold?",
-		"answers": ["Au", "Ag", "Fe", "Pb"],
-		"correctAnswer": "Au",
+		"question": "What is the output of: console.log(1 + '2' + 3)?",
+		"answers": ["6", "123", "15", "Error"],
+		"correctAnswer": "123",
 		"difficulty": "medium"
 	},
 	{
-		"question": "Who painted the Mona Lisa?",
-		"answers": ["Vincent van Gogh", "Pablo Picasso", "Leonardo da Vinci", "Claude Monet"],
-		"correctAnswer": "Leonardo da Vinci",
+		"question": "How do you access the first element of an array called 'arr'?",
+		"answers": ["arr[1]", "arr[0]", "arr.first()", "arr.get(0)"],
+		"correctAnswer": "arr[0]",
 		"difficulty": "easy"
 	},
 	{
-		"question": "What is the smallest prime number?",
-		"answers": ["0", "1", "2", "3"],
-		"correctAnswer": "2",
+		"question": "What does the 'let' keyword do?",
+		"answers": [
+			"Creates a global variable",
+			"Creates a block-scoped variable",
+			"Creates a constant",
+			"Creates a function"
+		],
+		"correctAnswer": "Creates a block-scoped variable",
+		"difficulty": "medium"
+	},
+	{
+		"question": "Which operator is used for strict equality?",
+		"answers": ["==", "===", "=", "!="],
+		"correctAnswer": "===",
 		"difficulty": "easy"
 	},
 	{
-		"question": 42,
-		"answers": [24, 42, 84, 168],
-		"correctAnswer": 42,
-		"difficulty": null
+		"question": "What will 'Boolean(\"\")' return?",
+		"answers": ["true", "false", "undefined", "null"],
+		"correctAnswer": "false",
+		"difficulty": "medium"
+	},
+	{
+		"question": "How do you write a single-line comment in JavaScript?",
+		"answers": ["/* comment */", "// comment", "<!-- comment -->", "# comment"],
+		"correctAnswer": "// comment",
+		"difficulty": "easy"
+	},
+	{
+		"question": "What is the result of: [1, 2, 3].length?",
+		"answers": ["2", "3", "4", "undefined"],
+		"correctAnswer": "3",
+		"difficulty": "easy"
+	},
+	{
+		"question": "Which method removes the last element from an array?",
+		"answers": ["pop()", "push()", "shift()", "slice()"],
+		"correctAnswer": "pop()",
+		"difficulty": "easy"
+	},
+	{
+		"question": "What does 'NaN' stand for?",
+		"answers": ["Not a Name", "Not a Number", "Null and Null", "New and Nice"],
+		"correctAnswer": "Not a Number",
+		"difficulty": "easy"
+	},
+	{
+		"question": "How do you convert a string to a number in JavaScript?",
+		"answers": ["parseInt()", "Number()", "parseFloat()", "All of the above"],
+		"correctAnswer": "All of the above",
+		"difficulty": "medium"
+	},
+	{
+		"question": "What will 'typeof []' return?",
+		"answers": ["array", "object", "list", "undefined"],
+		"correctAnswer": "object",
+		"difficulty": "medium"
+	},
+	{
+		"question": "Which loop is best for iterating over arrays?",
+		"answers": ["for loop", "while loop", "do-while loop", "All are equally good"],
+		"correctAnswer": "All are equally good",
+		"difficulty": "medium"
+	},
+	{
+		"question": "What does the 'this' keyword refer to?",
+		"answers": [
+			"The current function",
+			"The current object",
+			"The global object",
+			"It depends on context"
+		],
+		"correctAnswer": "It depends on context",
+		"difficulty": "hard"
+	},
+	{
+		"question": "How do you check if a variable is an array?",
+		"answers": [
+			"typeof arr === 'array'",
+			"arr instanceof Array",
+			"Array.isArray(arr)",
+			"Both B and C"
+		],
+		"correctAnswer": "Both B and C",
+		"difficulty": "medium"
+	},
+	{
+		"question": "What is closure in JavaScript?",
+		"answers": [
+			"A way to close functions",
+			"A function with access to outer scope",
+			"A method to end loops",
+			"A type of variable"
+		],
+		"correctAnswer": "A function with access to outer scope",
+		"difficulty": "hard"
+	},
+	{
+		"question": "What will 'console.log(0.1 + 0.2 === 0.3)' output?",
+		"answers": ["true", "false", "undefined", "Error"],
+		"correctAnswer": "false",
+		"difficulty": "hard"
+	},
+	{
+		"question": "Which method joins array elements into a string?",
+		"answers": ["join()", "concat()", "merge()", "combine()"],
+		"correctAnswer": "join()",
+		"difficulty": "easy"
+	},
+	{
+		"question": "What does 'const' keyword do?",
+		"answers": [
+			"Creates a variable",
+			"Creates a constant",
+			"Creates a function",
+			"Creates an object"
+		],
+		"correctAnswer": "Creates a constant",
+		"difficulty": "easy"
+	},
+	{
+		"question": "How do you create an object in JavaScript?",
+		"answers": ["{}", "new Object()", "Object.create()", "All of the above"],
+		"correctAnswer": "All of the above",
+		"difficulty": "medium"
+	},
+	{
+		"question": "What is the difference between 'null' and 'undefined'?",
+		"answers": [
+			"No difference",
+			"null is assigned, undefined is not",
+			"undefined is assigned, null is not",
+			"They are different types"
+		],
+		"correctAnswer": "null is assigned, undefined is not",
+		"difficulty": "medium"
+	},
+	{
+		"question": "Which method creates a new array with results of calling a function?",
+		"answers": ["map()", "filter()", "forEach()", "reduce()"],
+		"correctAnswer": "map()",
+		"difficulty": "medium"
+	},
+	{
+		"question": "What will '!true' evaluate to?",
+		"answers": ["true", "false", "undefined", "null"],
+		"correctAnswer": "false",
+		"difficulty": "easy"
+	},
+	{
+		"question": "How do you access object properties?",
+		"answers": ["obj.property", "obj['property']", "obj->property", "Both A and B"],
+		"correctAnswer": "Both A and B",
+		"difficulty": "easy"
+	},
+	{
+		"question": "What is hoisting in JavaScript?",
+		"answers": [
+			"Moving code up",
+			"Variable declarations moved to top",
+			"Function optimization",
+			"Memory management"
+		],
+		"correctAnswer": "Variable declarations moved to top",
+		"difficulty": "hard"
+	},
+	{
+		"question": "Which method tests whether at least one element passes a test?",
+		"answers": ["some()", "every()", "filter()", "find()"],
+		"correctAnswer": "some()",
+		"difficulty": "medium"
+	},
+	{
+		"question": "What does 'JSON.parse()' do?",
+		"answers": [
+			"Converts object to JSON",
+			"Converts JSON to object",
+			"Validates JSON",
+			"Creates JSON"
+		],
+		"correctAnswer": "Converts JSON to object",
+		"difficulty": "medium"
+	},
+	{
+		"question": "How do you handle errors in JavaScript?",
+		"answers": ["try-catch", "if-else", "switch-case", "error()"],
+		"correctAnswer": "try-catch",
+		"difficulty": "medium"
+	},
+	{
+		"question": "What is the global object in browsers?",
+		"answers": ["global", "window", "document", "this"],
+		"correctAnswer": "window",
+		"difficulty": "medium"
+	},
+	{
+		"question": "Which method removes elements from an array?",
+		"answers": ["splice()", "slice()", "split()", "delete()"],
+		"correctAnswer": "splice()",
+		"difficulty": "medium"
+	},
+	{
+		"question": "What will 'console.log(typeof typeof 1)' output?",
+		"answers": ["number", "string", "undefined", "object"],
+		"correctAnswer": "string",
+		"difficulty": "hard"
+	},
+	{
+		"question": "How do you create a new date object?",
+		"answers": ["new Date()", "Date.create()", "Date.new()", "createDate()"],
+		"correctAnswer": "new Date()",
+		"difficulty": "easy"
+	},
+	{
+		"question": "What is an IIFE?",
+		"answers": [
+			"Inline Function",
+			"Immediately Invoked Function Expression",
+			"Internal Function",
+			"Inherited Function"
+		],
+		"correctAnswer": "Immediately Invoked Function Expression",
+		"difficulty": "hard"
+	},
+	{
+		"question": "Which method returns a new array with elements that pass a test?",
+		"answers": ["filter()", "map()", "forEach()", "reduce()"],
+		"correctAnswer": "filter()",
+		"difficulty": "medium"
+	},
+	{
+		"question": "What does 'Math.floor(4.7)' return?",
+		"answers": ["4", "5", "4.7", "Error"],
+		"correctAnswer": "4",
+		"difficulty": "easy"
+	},
+	{
+		"question": "How do you declare an arrow function?",
+		"answers": ["=> function() {}", "() => {}", "function => {}", "arrow() {}"],
+		"correctAnswer": "() => {}",
+		"difficulty": "medium"
+	},
+	{
+		"question": "What is the output of: console.log([1, 2, 3] + [4, 5, 6])?",
+		"answers": ["[1,2,3,4,5,6]", "1,2,34,5,6", "[7,7,9]", "Error"],
+		"correctAnswer": "1,2,34,5,6",
+		"difficulty": "hard"
+	},
+	{
+		"question": "Which method finds the first element that matches a condition?",
+		"answers": ["find()", "filter()", "search()", "match()"],
+		"correctAnswer": "find()",
+		"difficulty": "medium"
+	},
+	{
+		"question": "What does 'String.prototype.charAt(0)' do?",
+		"answers": [
+			"Gets first character",
+			"Gets last character",
+			"Gets character count",
+			"Removes first character"
+		],
+		"correctAnswer": "Gets first character",
+		"difficulty": "medium"
+	},
+	{
+		"question": "How do you convert an array to a string?",
+		"answers": ["toString()", "join()", "String()", "All of the above"],
+		"correctAnswer": "All of the above",
+		"difficulty": "medium"
+	},
+	{
+		"question": "What is the result of: Boolean(0)?",
+		"answers": ["true", "false", "0", "undefined"],
+		"correctAnswer": "false",
+		"difficulty": "easy"
+	},
+	{
+		"question": "Which operator checks if a property exists in an object?",
+		"answers": ["in", "exists", "has", "contains"],
+		"correctAnswer": "in",
+		"difficulty": "medium"
+	},
+	{
+		"question": "What does 'Array.isArray([])' return?",
+		"answers": ["true", "false", "undefined", "null"],
+		"correctAnswer": "true",
+		"difficulty": "easy"
+	},
+	{
+		"question": "How do you get the length of a string?",
+		"answers": ["str.length", "str.size()", "str.count()", "length(str)"],
+		"correctAnswer": "str.length",
+		"difficulty": "easy"
+	},
+	{
+		"question": "What is event bubbling?",
+		"answers": [
+			"Event goes up DOM tree",
+			"Event goes down DOM tree",
+			"Event stops",
+			"Event repeats"
+		],
+		"correctAnswer": "Event goes up DOM tree",
+		"difficulty": "hard"
+	},
+	{
+		"question": "Which method executes a function for each array element?",
+		"answers": ["forEach()", "map()", "filter()", "reduce()"],
+		"correctAnswer": "forEach()",
+		"difficulty": "medium"
 	}
 ]
