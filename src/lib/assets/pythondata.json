@@ -1,0 +1,489 @@
+[
+	{
+		"question": "How do you print 'Hello World' in Python?",
+		"answers": [
+			"print('Hello World')",
+			"console.log('Hello World')",
+			"echo 'Hello World'",
+			"printf('Hello World')"
+		],
+		"correctAnswer": "print('Hello World')",
+		"difficulty": "easy",
+		"answerDescription": "In Python, the print() function is used to output text to the console."
+	},
+	{
+		"question": "Which of these is the correct way to create a comment in Python?",
+		"answers": [
+			"# This is a comment",
+			"// This is a comment",
+			"/* This is a comment */",
+			"<!-- This is a comment -->"
+		],
+		"correctAnswer": "# This is a comment",
+		"difficulty": "easy",
+		"answerDescription": "Python uses the # symbol for single-line comments. Multi-line comments use triple quotes."
+	},
+	{
+		"question": "What data type is the result of: type(5)?",
+		"answers": ["<class 'int'>", "<class 'float'>", "<class 'str'>", "<class 'number'>"],
+		"correctAnswer": "<class 'int'>",
+		"difficulty": "easy",
+		"answerDescription": "The number 5 without a decimal point is an integer, so type() returns <class 'int'>."
+	},
+	{
+		"question": "How do you create a variable in Python?",
+		"answers": ["x = 5", "var x = 5", "int x = 5", "declare x = 5"],
+		"correctAnswer": "x = 5",
+		"difficulty": "easy",
+		"answerDescription": "Python uses simple assignment with the = operator. No variable declaration keywords are needed."
+	},
+	{
+		"question": "What is the correct way to create a list in Python?",
+		"answers": [
+			"my_list = [1, 2, 3]",
+			"my_list = (1, 2, 3)",
+			"my_list = {1, 2, 3}",
+			"my_list = <1, 2, 3>"
+		],
+		"correctAnswer": "my_list = [1, 2, 3]",
+		"difficulty": "easy",
+		"answerDescription": "Lists in Python are created using square brackets []. Parentheses create tuples, curly braces create sets."
+	},
+	{
+		"question": "How do you access the first element of a list called 'items'?",
+		"answers": ["items[0]", "items[1]", "items.first()", "items.get(0)"],
+		"correctAnswer": "items[0]",
+		"difficulty": "easy",
+		"answerDescription": "Python lists are zero-indexed, so the first element is at index 0."
+	},
+	{
+		"question": "What does len([1, 2, 3, 4]) return?",
+		"answers": ["4", "3", "5", "Error"],
+		"correctAnswer": "4",
+		"difficulty": "easy",
+		"answerDescription": "The len() function returns the number of items in a sequence. This list has 4 elements."
+	},
+	{
+		"question": "Which keyword is used to define a function in Python?",
+		"answers": ["def", "function", "func", "define"],
+		"correctAnswer": "def",
+		"difficulty": "easy",
+		"answerDescription": "Functions in Python are defined using the 'def' keyword followed by the function name and parentheses."
+	},
+	{
+		"question": "What is the correct syntax for an if statement in Python?",
+		"answers": ["if x == 5:", "if (x == 5)", "if x == 5 then:", "if x == 5 {"],
+		"correctAnswer": "if x == 5:",
+		"difficulty": "easy",
+		"answerDescription": "Python if statements end with a colon and use indentation for the code block. Parentheses are optional."
+	},
+	{
+		"question": "How do you create a string in Python?",
+		"answers": ["Both 'text' and \"text\"", "Only 'text'", "Only \"text\"", "String('text')"],
+		"correctAnswer": "Both 'text' and \"text\"",
+		"difficulty": "easy",
+		"answerDescription": "Python accepts both single quotes and double quotes for creating strings."
+	},
+	{
+		"question": "What does the range(5) function produce?",
+		"answers": ["0, 1, 2, 3, 4", "1, 2, 3, 4, 5", "0, 1, 2, 3, 4, 5", "1, 2, 3, 4"],
+		"correctAnswer": "0, 1, 2, 3, 4",
+		"difficulty": "easy",
+		"answerDescription": "range(5) generates numbers from 0 up to (but not including) 5, so 0 through 4."
+	},
+	{
+		"question": "Which of these is NOT a valid Python variable name?",
+		"answers": ["2variable", "variable2", "_variable", "Variable"],
+		"correctAnswer": "2variable",
+		"difficulty": "easy",
+		"answerDescription": "Variable names cannot start with a number. They must start with a letter or underscore."
+	},
+	{
+		"question": "What is the result of 'Hello' + 'World' in Python?",
+		"answers": ["HelloWorld", "Hello World", "Error", "Hello+World"],
+		"correctAnswer": "HelloWorld",
+		"difficulty": "easy",
+		"answerDescription": "String concatenation with + joins strings directly without adding spaces."
+	},
+	{
+		"question": "How do you get user input in Python?",
+		"answers": ["input()", "get_input()", "read()", "scanf()"],
+		"correctAnswer": "input()",
+		"difficulty": "easy",
+		"answerDescription": "The input() function reads a line from the user and returns it as a string."
+	},
+	{
+		"question": "What does the append() method do to a list?",
+		"answers": [
+			"Adds item to the end",
+			"Adds item to beginning",
+			"Removes last item",
+			"Sorts the list"
+		],
+		"correctAnswer": "Adds item to the end",
+		"difficulty": "easy",
+		"answerDescription": "append() adds a single element to the end of a list, modifying the original list."
+	},
+	{
+		"question": "What is the difference between a list and a tuple in Python?",
+		"answers": [
+			"Lists are mutable, tuples are not",
+			"Tuples are mutable, lists are not",
+			"No difference",
+			"Lists use (), tuples use []"
+		],
+		"correctAnswer": "Lists are mutable, tuples are not",
+		"difficulty": "medium",
+		"answerDescription": "Lists can be modified after creation (mutable), while tuples cannot be changed (immutable)."
+	},
+	{
+		"question": "What does the expression 5 // 2 evaluate to?",
+		"answers": ["2", "2.5", "3", "Error"],
+		"correctAnswer": "2",
+		"difficulty": "medium",
+		"answerDescription": "// is floor division, which returns the quotient without the remainder, rounded down to nearest integer."
+	},
+	{
+		"question": "What is the result of bool([]) in Python?",
+		"answers": ["False", "True", "[]", "Error"],
+		"correctAnswer": "False",
+		"difficulty": "medium",
+		"answerDescription": "Empty containers (lists, tuples, strings, dictionaries) evaluate to False in boolean context."
+	},
+	{
+		"question": "Which method is used to remove whitespace from both ends of a string?",
+		"answers": ["strip()", "trim()", "clean()", "remove()"],
+		"correctAnswer": "strip()",
+		"difficulty": "medium",
+		"answerDescription": "strip() removes whitespace from both ends. lstrip() removes from left, rstrip() from right."
+	},
+	{
+		"question": "What is the correct way to create a dictionary in Python?",
+		"answers": [
+			"{\"key\": \"value\"}",
+			"[\"key\": \"value\"]",
+			"(\"key\": \"value\")",
+			"<\"key\": \"value\">"
+		],
+		"correctAnswer": "{\"key\": \"value\"}",
+		"difficulty": "medium",
+		"answerDescription": "Dictionaries use curly braces {} with key:value pairs separated by colons."
+	},
+	{
+		"question": "What does the 'in' operator do in Python?",
+		"answers": ["Checks membership", "Assigns values", "Imports modules", "Defines loops"],
+		"correctAnswer": "Checks membership",
+		"difficulty": "medium",
+		"answerDescription": "The 'in' operator tests if a value exists in a sequence (list, string, tuple, etc.)."
+	},
+	{
+		"question": "What is the output of print(3 * 'Hi')?",
+		"answers": ["HiHiHi", "3Hi", "Hi3", "Error"],
+		"correctAnswer": "HiHiHi",
+		"difficulty": "medium",
+		"answerDescription": "String multiplication repeats the string the specified number of times."
+	},
+	{
+		"question": "Which of these creates a set in Python?",
+		"answers": ["{1, 2, 3}", "[1, 2, 3]", "(1, 2, 3)", "set(1, 2, 3)"],
+		"correctAnswer": "{1, 2, 3}",
+		"difficulty": "medium",
+		"answerDescription": "Sets use curly braces {} like dictionaries, but contain only values, no key:value pairs."
+	},
+	{
+		"question": "What does the enumerate() function do?",
+		"answers": ["Returns index-value pairs", "Counts items", "Numbers items", "Creates ranges"],
+		"correctAnswer": "Returns index-value pairs",
+		"difficulty": "medium",
+		"answerDescription": "enumerate() returns tuples of (index, value) for each item in an iterable."
+	},
+	{
+		"question": "What is the result of 'python'.upper()?",
+		"answers": ["PYTHON", "Python", "python", "Error"],
+		"correctAnswer": "PYTHON",
+		"difficulty": "medium",
+		"answerDescription": "The upper() method converts all characters in a string to uppercase."
+	},
+	{
+		"question": "How do you handle exceptions in Python?",
+		"answers": ["try/except", "catch/throw", "if/else", "handle/error"],
+		"correctAnswer": "try/except",
+		"difficulty": "medium",
+		"answerDescription": "Python uses try/except blocks for exception handling, similar to try/catch in other languages."
+	},
+	{
+		"question": "What is the difference between '==' and 'is' in Python?",
+		"answers": [
+			"== compares values, is compares identity",
+			"is compares values, == compares identity",
+			"No difference",
+			"is is deprecated"
+		],
+		"correctAnswer": "== compares values, is compares identity",
+		"difficulty": "medium",
+		"answerDescription": "== checks if values are equal, while 'is' checks if two variables refer to the same object in memory."
+	},
+	{
+		"question": "What does list(range(3, 7)) return?",
+		"answers": ["[3, 4, 5, 6]", "[3, 4, 5, 6, 7]", "[4, 5, 6, 7]", "[3, 7]"],
+		"correctAnswer": "[3, 4, 5, 6]",
+		"difficulty": "medium",
+		"answerDescription": "range(3, 7) generates numbers from 3 up to (but not including) 7."
+	},
+	{
+		"question": "Which method adds multiple elements to a list?",
+		"answers": ["extend()", "append()", "add()", "insert()"],
+		"correctAnswer": "extend()",
+		"difficulty": "medium",
+		"answerDescription": "extend() adds all elements from an iterable to the list. append() adds only one element."
+	},
+	{
+		"question": "What is the output of len('Hello\\nWorld')?",
+		"answers": ["11", "10", "12", "Error"],
+		"correctAnswer": "11",
+		"difficulty": "medium",
+		"answerDescription": "\\n is an escape sequence representing one newline character, so total length is 11."
+	},
+	{
+		"question": "What is a list comprehension in Python?",
+		"answers": [
+			"Concise way to create lists",
+			"List documentation",
+			"List sorting method",
+			"List copying technique"
+		],
+		"correctAnswer": "Concise way to create lists",
+		"difficulty": "hard",
+		"answerDescription": "List comprehensions provide a concise way to create lists using the syntax [expression for item in iterable]."
+	},
+	{
+		"question": "What does *args allow in a function definition?",
+		"answers": [
+			"Variable number of arguments",
+			"Keyword arguments",
+			"Default arguments",
+			"Type hints"
+		],
+		"correctAnswer": "Variable number of arguments",
+		"difficulty": "hard",
+		"answerDescription": "*args allows functions to accept any number of positional arguments, packed into a tuple."
+	},
+	{
+		"question": "What is the purpose of **kwargs in Python?",
+		"answers": [
+			"Variable keyword arguments",
+			"Variable positional arguments",
+			"Function decoration",
+			"Class inheritance"
+		],
+		"correctAnswer": "Variable keyword arguments",
+		"difficulty": "hard",
+		"answerDescription": "**kwargs allows functions to accept any number of keyword arguments, packed into a dictionary."
+	},
+	{
+		"question": "What does the @property decorator do?",
+		"answers": [
+			"Creates getter methods",
+			"Creates static methods",
+			"Creates class methods",
+			"Creates decorators"
+		],
+		"correctAnswer": "Creates getter methods",
+		"difficulty": "hard",
+		"answerDescription": "@property allows methods to be accessed like attributes, providing a way to implement getters and setters."
+	},
+	{
+		"question": "What is the difference between shallow and deep copy?",
+		"answers": [
+			"Shallow copies references, deep copies objects",
+			"Deep copies references, shallow copies objects",
+			"No difference",
+			"Deep is faster"
+		],
+		"correctAnswer": "Shallow copies references, deep copies objects",
+		"difficulty": "hard",
+		"answerDescription": "Shallow copy creates new object but references to nested objects remain. Deep copy creates completely independent copies."
+	},
+	{
+		"question": "What does the __init__ method do?",
+		"answers": [
+			"Constructor method",
+			"Destructor method",
+			"String representation",
+			"Object comparison"
+		],
+		"correctAnswer": "Constructor method",
+		"difficulty": "hard",
+		"answerDescription": "__init__ is the constructor method called when creating new instances of a class."
+	},
+	{
+		"question": "What is the Global Interpreter Lock (GIL)?",
+		"answers": [
+			"Limits Python to one thread execution",
+			"Enables parallel processing",
+			"Memory management tool",
+			"Import mechanism"
+		],
+		"correctAnswer": "Limits Python to one thread execution",
+		"difficulty": "hard",
+		"answerDescription": "GIL ensures only one thread executes Python bytecode at a time, limiting true parallelism in CPU-bound tasks."
+	},
+	{
+		"question": "What does the yield keyword do?",
+		"answers": ["Creates generators", "Returns values", "Pauses execution", "Handles exceptions"],
+		"correctAnswer": "Creates generators",
+		"difficulty": "hard",
+		"answerDescription": "yield creates generator functions that can pause execution and resume, providing memory-efficient iteration."
+	},
+	{
+		"question": "What is the purpose of lambda functions?",
+		"answers": ["Anonymous functions", "Class methods", "Error handling", "Module imports"],
+		"correctAnswer": "Anonymous functions",
+		"difficulty": "hard",
+		"answerDescription": "Lambda functions create small, anonymous functions that can be defined inline, often used with map(), filter(), etc."
+	},
+	{
+		"question": "What does the map() function do?",
+		"answers": [
+			"Applies function to iterable",
+			"Creates dictionaries",
+			"Maps keys to values",
+			"Sorts sequences"
+		],
+		"correctAnswer": "Applies function to iterable",
+		"difficulty": "hard",
+		"answerDescription": "map() applies a function to every item in an iterable and returns a map object (iterator)."
+	},
+	{
+		"question": "What is multiple inheritance in Python?",
+		"answers": [
+			"Class inherits from multiple classes",
+			"Multiple objects from one class",
+			"Multiple methods in class",
+			"Multiple variables in class"
+		],
+		"correctAnswer": "Class inherits from multiple classes",
+		"difficulty": "hard",
+		"answerDescription": "Multiple inheritance allows a class to inherit attributes and methods from multiple parent classes."
+	},
+	{
+		"question": "What does the super() function do?",
+		"answers": [
+			"Calls parent class methods",
+			"Creates superclass",
+			"Checks inheritance",
+			"Overrides methods"
+		],
+		"correctAnswer": "Calls parent class methods",
+		"difficulty": "hard",
+		"answerDescription": "super() provides access to methods in parent classes, commonly used to call parent constructors."
+	},
+	{
+		"question": "What is method resolution order (MRO)?",
+		"answers": [
+			"Order of method lookup",
+			"Method execution order",
+			"Method definition order",
+			"Method priority system"
+		],
+		"correctAnswer": "Order of method lookup",
+		"difficulty": "hard",
+		"answerDescription": "MRO determines the order in which Python searches for methods in inheritance hierarchies, following C3 linearization."
+	},
+	{
+		"question": "What does the filter() function do?",
+		"answers": [
+			"Filters items by condition",
+			"Removes duplicates",
+			"Sorts sequences",
+			"Counts occurrences"
+		],
+		"correctAnswer": "Filters items by condition",
+		"difficulty": "hard",
+		"answerDescription": "filter() creates an iterator from elements of an iterable for which a function returns True."
+	},
+	{
+		"question": "What is a closure in Python?",
+		"answers": [
+			"Function accessing outer scope",
+			"Class definition",
+			"Exception handling",
+			"Module import"
+		],
+		"correctAnswer": "Function accessing outer scope",
+		"difficulty": "hard",
+		"answerDescription": "A closure is an inner function that has access to variables in its outer scope, even after the outer function returns."
+	},
+	{
+		"question": "What does the __str__ method do?",
+		"answers": [
+			"Defines string representation",
+			"Converts to string",
+			"Compares strings",
+			"Validates strings"
+		],
+		"correctAnswer": "Defines string representation",
+		"difficulty": "hard",
+		"answerDescription": "__str__ defines the informal string representation of an object, called by str() and print()."
+	},
+	{
+		"question": "What is the difference between __str__ and __repr__?",
+		"answers": [
+			"__str__ for users, __repr__ for developers",
+			"__repr__ for users, __str__ for developers",
+			"No difference",
+			"__repr__ is deprecated"
+		],
+		"correctAnswer": "__str__ for users, __repr__ for developers",
+		"difficulty": "hard",
+		"answerDescription": "__str__ provides readable output for end users, __repr__ provides unambiguous representation for developers."
+	},
+	{
+		"question": "What does the zip() function do?",
+		"answers": [
+			"Combines multiple iterables",
+			"Compresses files",
+			"Creates tuples",
+			"Sorts parallel lists"
+		],
+		"correctAnswer": "Combines multiple iterables",
+		"difficulty": "hard",
+		"answerDescription": "zip() combines multiple iterables element-wise, creating tuples from corresponding elements."
+	},
+	{
+		"question": "What is a context manager in Python?",
+		"answers": [
+			"Manages resource allocation/cleanup",
+			"Manages class contexts",
+			"Manages function scope",
+			"Manages import contexts"
+		],
+		"correctAnswer": "Manages resource allocation/cleanup",
+		"difficulty": "hard",
+		"answerDescription": "Context managers handle resource allocation and cleanup automatically, typically used with 'with' statements."
+	},
+	{
+		"question": "What does the any() function return?",
+		"answers": [
+			"True if any element is True",
+			"True if all elements are True",
+			"First True element",
+			"Count of True elements"
+		],
+		"correctAnswer": "True if any element is True",
+		"difficulty": "hard",
+		"answerDescription": "any() returns True if any element in an iterable is True, False if all are False or iterable is empty."
+	},
+	{
+		"question": "What is the purpose of the all() function?",
+		"answers": [
+			"True if all elements are True",
+			"True if any element is True",
+			"Returns all elements",
+			"Counts all elements"
+		],
+		"correctAnswer": "True if all elements are True",
+		"difficulty": "hard",
+		"answerDescription": "all() returns True only if all elements in an iterable are True, False otherwise."
+	}
+]
