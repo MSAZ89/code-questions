@@ -3,19 +3,22 @@
 		"question": "What is the correct way to declare a variable in JavaScript?",
 		"answers": ["var myVar;", "variable myVar;", "v myVar;", "declare myVar;"],
 		"correctAnswer": "var myVar;",
-		"difficulty": "easy"
+		"difficulty": "easy",
+		"answerDescription": "Variables in JavaScript are declared using 'var', 'let', or 'const' keywords, followed by the variable name."
 	},
 	{
 		"question": "Which of the following is NOT a JavaScript data type?",
 		"answers": ["string", "boolean", "float", "undefined"],
 		"correctAnswer": "float",
-		"difficulty": "easy"
+		"difficulty": "easy",
+		"answerDescription": "JavaScript has number type for all numeric values. There's no separate 'float' type like in other languages."
 	},
 	{
 		"question": "What does '===' check in JavaScript?",
 		"answers": ["Value only", "Type only", "Both value and type", "Reference only"],
 		"correctAnswer": "Both value and type",
-		"difficulty": "medium"
+		"difficulty": "medium",
+		"answerDescription": "The strict equality operator '===' compares both value and type without type coercion, unlike '==' which only compares values."
 	},
 	{
 		"question": "How do you create a function in JavaScript?",
@@ -26,31 +29,36 @@
 			"function = myFunction() {}"
 		],
 		"correctAnswer": "function myFunction() {}",
-		"difficulty": "easy"
+		"difficulty": "easy",
+		"answerDescription": "Functions are created using the 'function' keyword followed by the function name and parentheses."
 	},
 	{
 		"question": "What will 'typeof null' return?",
 		"answers": ["null", "undefined", "object", "boolean"],
 		"correctAnswer": "object",
-		"difficulty": "medium"
+		"difficulty": "medium",
+		"answerDescription": "This is a famous JavaScript quirk. 'typeof null' returns 'object' due to a bug in the original implementation that was kept for compatibility."
 	},
 	{
 		"question": "Which method adds an element to the end of an array?",
 		"answers": ["push()", "pop()", "shift()", "unshift()"],
 		"correctAnswer": "push()",
-		"difficulty": "easy"
+		"difficulty": "easy",
+		"answerDescription": "push() adds elements to the end, pop() removes from end, unshift() adds to beginning, shift() removes from beginning."
 	},
 	{
 		"question": "What is the output of: console.log(1 + '2' + 3)?",
 		"answers": ["6", "123", "15", "Error"],
 		"correctAnswer": "123",
-		"difficulty": "medium"
+		"difficulty": "medium",
+		"answerDescription": "JavaScript converts 1 to string '1', concatenates with '2' to get '12', then concatenates with 3 to get '123'."
 	},
 	{
 		"question": "How do you access the first element of an array called 'arr'?",
 		"answers": ["arr[1]", "arr[0]", "arr.first()", "arr.get(0)"],
 		"correctAnswer": "arr[0]",
-		"difficulty": "easy"
+		"difficulty": "easy",
+		"answerDescription": "Arrays are zero-indexed in JavaScript, so the first element is at index 0."
 	},
 	{
 		"question": "What does the 'let' keyword do?",
@@ -61,61 +69,71 @@
 			"Creates a function"
 		],
 		"correctAnswer": "Creates a block-scoped variable",
-		"difficulty": "medium"
+		"difficulty": "medium",
+		"answerDescription": "'let' creates block-scoped variables that can be reassigned, unlike 'var' which is function-scoped."
 	},
 	{
 		"question": "Which operator is used for strict equality?",
 		"answers": ["==", "===", "=", "!="],
 		"correctAnswer": "===",
-		"difficulty": "easy"
+		"difficulty": "easy",
+		"answerDescription": "'===' is strict equality (no type conversion), '==' is loose equality (with type conversion), '=' is assignment."
 	},
 	{
 		"question": "What will 'Boolean(\"\")' return?",
 		"answers": ["true", "false", "undefined", "null"],
 		"correctAnswer": "false",
-		"difficulty": "medium"
+		"difficulty": "medium",
+		"answerDescription": "Empty strings are falsy in JavaScript, so Boolean('') returns false. Only non-empty strings are truthy."
 	},
 	{
 		"question": "How do you write a single-line comment in JavaScript?",
 		"answers": ["/* comment */", "// comment", "<!-- comment -->", "# comment"],
 		"correctAnswer": "// comment",
-		"difficulty": "easy"
+		"difficulty": "easy",
+		"answerDescription": "'//' creates single-line comments, '/* */' creates multi-line comments in JavaScript."
 	},
 	{
 		"question": "What is the result of: [1, 2, 3].length?",
 		"answers": ["2", "3", "4", "undefined"],
 		"correctAnswer": "3",
-		"difficulty": "easy"
+		"difficulty": "easy",
+		"answerDescription": "The length property returns the number of elements in an array. This array has 3 elements."
 	},
 	{
 		"question": "Which method removes the last element from an array?",
 		"answers": ["pop()", "push()", "shift()", "slice()"],
 		"correctAnswer": "pop()",
-		"difficulty": "easy"
+		"difficulty": "easy",
+		"answerDescription": "pop() removes and returns the last element. push() adds to end, shift() removes from beginning."
 	},
 	{
 		"question": "What does 'NaN' stand for?",
 		"answers": ["Not a Name", "Not a Number", "Null and Null", "New and Nice"],
 		"correctAnswer": "Not a Number",
-		"difficulty": "easy"
+		"difficulty": "easy",
+		"answerDescription": "NaN represents a value that is not a valid number, often resulting from invalid mathematical operations."
 	},
 	{
 		"question": "How do you convert a string to a number in JavaScript?",
 		"answers": ["parseInt()", "Number()", "parseFloat()", "All of the above"],
 		"correctAnswer": "All of the above",
-		"difficulty": "medium"
+		"difficulty": "medium",
+		"answerDescription": "parseInt() converts to integer, parseFloat() to decimal, Number() does general conversion. All can convert strings to numbers."
 	},
 	{
 		"question": "What will 'typeof []' return?",
 		"answers": ["array", "object", "list", "undefined"],
 		"correctAnswer": "object",
-		"difficulty": "medium"
+		"difficulty": "medium",
+		"answerDescription": "Arrays are a special type of object in JavaScript, so typeof returns 'object'. Use Array.isArray() to check for arrays."
 	},
 	{
 		"question": "Which loop is best for iterating over arrays?",
 		"answers": ["for loop", "while loop", "do-while loop", "All are equally good"],
 		"correctAnswer": "All are equally good",
-		"difficulty": "medium"
+		"difficulty": "medium",
+		"answerDescription": "All loops can iterate arrays effectively. Choice depends on specific needs: for-loop for indices, for-of for values, forEach for functional style."
 	},
 	{
 		"question": "What does the 'this' keyword refer to?",
@@ -126,7 +144,8 @@
 			"It depends on context"
 		],
 		"correctAnswer": "It depends on context",
-		"difficulty": "hard"
+		"difficulty": "hard",
+		"answerDescription": "'this' binding depends on how a function is called: method calls bind to the object, regular calls to global/undefined."
 	},
 	{
 		"question": "How do you check if a variable is an array?",
@@ -137,7 +156,8 @@
 			"Both B and C"
 		],
 		"correctAnswer": "Both B and C",
-		"difficulty": "medium"
+		"difficulty": "medium",
+		"answerDescription": "Both 'instanceof Array' and 'Array.isArray()' work. Array.isArray() is preferred as it works across frames."
 	},
 	{
 		"question": "What is closure in JavaScript?",
@@ -148,19 +168,22 @@
 			"A type of variable"
 		],
 		"correctAnswer": "A function with access to outer scope",
-		"difficulty": "hard"
+		"difficulty": "hard",
+		"answerDescription": "A closure allows inner functions to access variables from their outer/enclosing scope even after the outer function returns."
 	},
 	{
 		"question": "What will 'console.log(0.1 + 0.2 === 0.3)' output?",
 		"answers": ["true", "false", "undefined", "Error"],
 		"correctAnswer": "false",
-		"difficulty": "hard"
+		"difficulty": "hard",
+		"answerDescription": "Due to floating-point precision issues, 0.1 + 0.2 equals 0.30000000000000004, not exactly 0.3."
 	},
 	{
 		"question": "Which method joins array elements into a string?",
 		"answers": ["join()", "concat()", "merge()", "combine()"],
 		"correctAnswer": "join()",
-		"difficulty": "easy"
+		"difficulty": "easy",
+		"answerDescription": "join() combines array elements into a string with optional separator. concat() merges arrays, not strings."
 	},
 	{
 		"question": "What does 'const' keyword do?",
@@ -171,13 +194,15 @@
 			"Creates an object"
 		],
 		"correctAnswer": "Creates a constant",
-		"difficulty": "easy"
+		"difficulty": "easy",
+		"answerDescription": "'const' creates block-scoped constants that cannot be reassigned, though objects/arrays can still be modified."
 	},
 	{
 		"question": "How do you create an object in JavaScript?",
 		"answers": ["{}", "new Object()", "Object.create()", "All of the above"],
 		"correctAnswer": "All of the above",
-		"difficulty": "medium"
+		"difficulty": "medium",
+		"answerDescription": "Objects can be created with literal syntax {}, constructor new Object(), or Object.create() method."
 	},
 	{
 		"question": "What is the difference between 'null' and 'undefined'?",
@@ -188,25 +213,29 @@
 			"They are different types"
 		],
 		"correctAnswer": "null is assigned, undefined is not",
-		"difficulty": "medium"
+		"difficulty": "medium",
+		"answerDescription": "'null' is explicitly assigned to indicate no value, 'undefined' means a variable exists but has no assigned value."
 	},
 	{
 		"question": "Which method creates a new array with results of calling a function?",
 		"answers": ["map()", "filter()", "forEach()", "reduce()"],
 		"correctAnswer": "map()",
-		"difficulty": "medium"
+		"difficulty": "medium",
+		"answerDescription": "map() transforms each element and returns a new array. filter() selects elements, forEach() just iterates."
 	},
 	{
 		"question": "What will '!true' evaluate to?",
 		"answers": ["true", "false", "undefined", "null"],
 		"correctAnswer": "false",
-		"difficulty": "easy"
+		"difficulty": "easy",
+		"answerDescription": "The logical NOT operator '!' inverts boolean values. !true becomes false, !false becomes true."
 	},
 	{
 		"question": "How do you access object properties?",
 		"answers": ["obj.property", "obj['property']", "obj->property", "Both A and B"],
 		"correctAnswer": "Both A and B",
-		"difficulty": "easy"
+		"difficulty": "easy",
+		"answerDescription": "Dot notation (obj.property) and bracket notation (obj['property']) both access properties. Brackets allow dynamic property names."
 	},
 	{
 		"question": "What is hoisting in JavaScript?",
@@ -217,13 +246,15 @@
 			"Memory management"
 		],
 		"correctAnswer": "Variable declarations moved to top",
-		"difficulty": "hard"
+		"difficulty": "hard",
+		"answerDescription": "Hoisting moves var declarations and function declarations to the top of their scope during compilation phase."
 	},
 	{
 		"question": "Which method tests whether at least one element passes a test?",
 		"answers": ["some()", "every()", "filter()", "find()"],
 		"correctAnswer": "some()",
-		"difficulty": "medium"
+		"difficulty": "medium",
+		"answerDescription": "some() returns true if at least one element passes the test. every() requires all elements to pass."
 	},
 	{
 		"question": "What does 'JSON.parse()' do?",
@@ -234,37 +265,43 @@
 			"Creates JSON"
 		],
 		"correctAnswer": "Converts JSON to object",
-		"difficulty": "medium"
+		"difficulty": "medium",
+		"answerDescription": "JSON.parse() converts JSON strings to JavaScript objects. JSON.stringify() does the reverse conversion."
 	},
 	{
 		"question": "How do you handle errors in JavaScript?",
 		"answers": ["try-catch", "if-else", "switch-case", "error()"],
 		"correctAnswer": "try-catch",
-		"difficulty": "medium"
+		"difficulty": "medium",
+		"answerDescription": "try-catch blocks handle exceptions. Code in 'try' is executed, errors are caught in 'catch' block."
 	},
 	{
 		"question": "What is the global object in browsers?",
 		"answers": ["global", "window", "document", "this"],
 		"correctAnswer": "window",
-		"difficulty": "medium"
+		"difficulty": "medium",
+		"answerDescription": "In browsers, 'window' is the global object. In Node.js, it's 'global'. 'document' is the DOM object."
 	},
 	{
 		"question": "Which method removes elements from an array?",
 		"answers": ["splice()", "slice()", "split()", "delete()"],
 		"correctAnswer": "splice()",
-		"difficulty": "medium"
+		"difficulty": "medium",
+		"answerDescription": "splice() modifies the original array by removing/adding elements. slice() returns a copy without modification."
 	},
 	{
 		"question": "What will 'console.log(typeof typeof 1)' output?",
 		"answers": ["number", "string", "undefined", "object"],
 		"correctAnswer": "string",
-		"difficulty": "hard"
+		"difficulty": "hard",
+		"answerDescription": "typeof 1 returns 'number' (a string), then typeof 'number' returns 'string' because 'number' is a string value."
 	},
 	{
 		"question": "How do you create a new date object?",
 		"answers": ["new Date()", "Date.create()", "Date.new()", "createDate()"],
 		"correctAnswer": "new Date()",
-		"difficulty": "easy"
+		"difficulty": "easy",
+		"answerDescription": "Date objects are created using the 'new Date()' constructor, optionally with date/time parameters."
 	},
 	{
 		"question": "What is an IIFE?",
@@ -275,37 +312,43 @@
 			"Inherited Function"
 		],
 		"correctAnswer": "Immediately Invoked Function Expression",
-		"difficulty": "hard"
+		"difficulty": "hard",
+		"answerDescription": "IIFE is a function that runs immediately when defined: (function(){...})(); commonly used to create private scope."
 	},
 	{
 		"question": "Which method returns a new array with elements that pass a test?",
 		"answers": ["filter()", "map()", "forEach()", "reduce()"],
 		"correctAnswer": "filter()",
-		"difficulty": "medium"
+		"difficulty": "medium",
+		"answerDescription": "filter() creates a new array with elements that pass the test function. map() transforms elements."
 	},
 	{
 		"question": "What does 'Math.floor(4.7)' return?",
 		"answers": ["4", "5", "4.7", "Error"],
 		"correctAnswer": "4",
-		"difficulty": "easy"
+		"difficulty": "easy",
+		"answerDescription": "Math.floor() rounds down to the nearest integer. Math.ceil() rounds up, Math.round() rounds to nearest."
 	},
 	{
 		"question": "How do you declare an arrow function?",
 		"answers": ["=> function() {}", "() => {}", "function => {}", "arrow() {}"],
 		"correctAnswer": "() => {}",
-		"difficulty": "medium"
+		"difficulty": "medium",
+		"answerDescription": "Arrow functions use '=>' syntax: () => {}. They have lexical 'this' binding and shorter syntax."
 	},
 	{
 		"question": "What is the output of: console.log([1, 2, 3] + [4, 5, 6])?",
 		"answers": ["[1,2,3,4,5,6]", "1,2,34,5,6", "[7,7,9]", "Error"],
 		"correctAnswer": "1,2,34,5,6",
-		"difficulty": "hard"
+		"difficulty": "hard",
+		"answerDescription": "Arrays are converted to strings when using '+': '1,2,3' + '4,5,6' = '1,2,34,5,6'. Use concat() for array merging."
 	},
 	{
 		"question": "Which method finds the first element that matches a condition?",
 		"answers": ["find()", "filter()", "search()", "match()"],
 		"correctAnswer": "find()",
-		"difficulty": "medium"
+		"difficulty": "medium",
+		"answerDescription": "find() returns the first element that passes the test. filter() returns all matching elements in an array."
 	},
 	{
 		"question": "What does 'String.prototype.charAt(0)' do?",
@@ -316,37 +359,43 @@
 			"Removes first character"
 		],
 		"correctAnswer": "Gets first character",
-		"difficulty": "medium"
+		"difficulty": "medium",
+		"answerDescription": "charAt(index) returns the character at the specified index. charAt(0) gets the first character."
 	},
 	{
 		"question": "How do you convert an array to a string?",
 		"answers": ["toString()", "join()", "String()", "All of the above"],
 		"correctAnswer": "All of the above",
-		"difficulty": "medium"
+		"difficulty": "medium",
+		"answerDescription": "toString() and join() convert arrays to comma-separated strings. String() also works for type conversion."
 	},
 	{
 		"question": "What is the result of: Boolean(0)?",
 		"answers": ["true", "false", "0", "undefined"],
 		"correctAnswer": "false",
-		"difficulty": "easy"
+		"difficulty": "easy",
+		"answerDescription": "Zero (0) is falsy in JavaScript. Only non-zero numbers are truthy when converted to boolean."
 	},
 	{
 		"question": "Which operator checks if a property exists in an object?",
 		"answers": ["in", "exists", "has", "contains"],
 		"correctAnswer": "in",
-		"difficulty": "medium"
+		"difficulty": "medium",
+		"answerDescription": "The 'in' operator checks if a property exists: 'property' in obj. hasOwnProperty() checks own properties only."
 	},
 	{
 		"question": "What does 'Array.isArray([])' return?",
 		"answers": ["true", "false", "undefined", "null"],
 		"correctAnswer": "true",
-		"difficulty": "easy"
+		"difficulty": "easy",
+		"answerDescription": "Array.isArray() returns true for arrays and false for other types. [] is an empty array, so it returns true."
 	},
 	{
 		"question": "How do you get the length of a string?",
 		"answers": ["str.length", "str.size()", "str.count()", "length(str)"],
 		"correctAnswer": "str.length",
-		"difficulty": "easy"
+		"difficulty": "easy",
+		"answerDescription": "Strings have a 'length' property that returns the number of characters, similar to arrays."
 	},
 	{
 		"question": "What is event bubbling?",
@@ -357,12 +406,14 @@
 			"Event repeats"
 		],
 		"correctAnswer": "Event goes up DOM tree",
-		"difficulty": "hard"
+		"difficulty": "hard",
+		"answerDescription": "Event bubbling means events propagate from the target element up through its parent elements to the document root."
 	},
 	{
 		"question": "Which method executes a function for each array element?",
 		"answers": ["forEach()", "map()", "filter()", "reduce()"],
 		"correctAnswer": "forEach()",
-		"difficulty": "medium"
+		"difficulty": "medium",
+		"answerDescription": "forEach() executes a function for each element but returns undefined. map() also iterates but returns a new array."
 	}
 ]

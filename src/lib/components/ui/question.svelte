@@ -4,6 +4,7 @@
 		answers = [],
 		correctAnswer = '',
 		difficulty = '',
+		answerDescription = '',
 		onCorrectAnswer = () => {}
 	} = $props();
 	let isResponseCorrect: boolean | null = $state(null);
@@ -83,6 +84,7 @@
 	{/if}
 	{#if isResponseCorrect === true}
 		<p class="mt-2 text-center text-xl font-bold text-green-600">Correct!</p>
+		<p class="mt-2 text-center text-gray-700">{answerDescription}</p>
 	{:else if isResponseCorrect === false}
 		<p class="mt-2 text-center text-xl font-bold text-red-600">Incorrect. Try again.</p>
 	{/if}

@@ -10,7 +10,9 @@
 	}
 </script>
 
-<div class="mb-4 flex flex-wrap space-x-4 text-white underline underline-offset-2">
+<div
+	class="mx-auto mb-4 flex flex-wrap items-center justify-center space-x-4 text-sm text-white underline underline-offset-2"
+>
 	<a
 		href="/javascript"
 		class:text-yellow-400={isActive('/javascript')}
