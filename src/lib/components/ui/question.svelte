@@ -49,17 +49,15 @@
 {/if}
 
 <div class="mt-2 bg-gray-100 p-2 transition-all duration-300 ease-in-out sm:rounded-lg sm:p-12">
-	<div class="mb-2 flex items-center text-lg font-semibold">
-		<div>
-			<h2 class="mx-auto mb-2 text-center text-2xl font-bold">
-				{question}
-			</h2>
-			{#if difficulty}
-				<p class="w-[fit-content] rounded pb-1 text-xs font-light text-gray-500">
-					{difficulty} difficulty
-				</p>
-			{/if}
-		</div>
+	<div class="mb-4">
+		<h2 class="mb-2 text-center text-2xl font-bold">
+			{question}
+		</h2>
+		{#if difficulty}
+			<p class="text-center text-xs font-light text-gray-500">
+				{difficulty} difficulty
+			</p>
+		{/if}
 	</div>
 	{#if answers.length > 0}
 		<div class="my-4 text-sm text-gray-600">
