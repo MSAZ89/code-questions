@@ -91,6 +91,12 @@
 	{:else if isResponseCorrect === false}
 		<div transition:fly={{ y: -20, duration: 400, delay: 100, easing: quintOut }}>
 			<p class="mt-2 text-center text-xl font-bold text-red-600">Incorrect.</p>
+			<p class="mt-2 text-center text-gray-700">
+				The correct answer is: <span class="font-bold">{correctAnswer}</span>
+			</p>
+			<p class="mt-6 text-center text-sm font-bold text-gray-900 lowercase">
+				[Click the correct answer to continue]
+			</p>
 		</div>
 	{/if}
 </div>
