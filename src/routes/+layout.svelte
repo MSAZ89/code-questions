@@ -10,7 +10,7 @@
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
-<main class="min-h-screen bg-black p-2">
+<main class="mx-auto min-h-screen bg-black p-2 sm:w-1/2">
 	<Topmenu />
 	{@render children?.()}
 </main>

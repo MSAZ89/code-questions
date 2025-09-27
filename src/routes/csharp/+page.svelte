@@ -72,5 +72,6 @@
 		answers={data[currentQuestion].answers.map((answer) => String(answer))}
 		correctAnswer={String(data[currentQuestion].correctAnswer)}
 		onCorrectAnswer={getNextQuestion}
+		answerDescription={String(data[currentQuestion].answerDescription)}
 	/>
 {/if}

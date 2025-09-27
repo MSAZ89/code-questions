@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { fade, fly, slide, scale, blur } from 'svelte/transition';
+	import { quintOut } from 'svelte/easing';
 	let {
 		question = '',
 		answers = [],
@@ -40,24 +42,23 @@
 	<button
 		class="rounded bg-green-500 px-2 py-1 text-white hover:cursor-pointer hover:bg-green-600"
 		onclick={advanceCorrectQuestion}
+		transition:fade={{ duration: 500, delay: 500 }}
 	>
 		Next Question
 	</button>
 {/if}
 
-<div class="mt-2 bg-gray-100 p-4">
+<div class="mt-2 bg-gray-100 p-2 transition-all duration-300 ease-in-out sm:rounded-lg sm:p-12">
 	<div class="mb-2 flex items-center text-lg font-semibold">
 		<div>
-			<h2 class="mb-2 text-2xl font-bold">
+			<h2 class="mx-auto mb-2 text-center text-2xl font-bold">
 				{question}
-				{#if difficulty}
-					<span
-						class="w-[fit-content] rounded bg-gray-900 px-2 py-0 pb-1 text-sm font-light text-white"
-					>
-						{difficulty}
-					</span>
-				{/if}
 			</h2>
+			{#if difficulty}
+				<p class="w-[fit-content] rounded pb-1 text-xs font-light text-gray-500">
+					{difficulty} difficulty
+				</p>
+			{/if}
 		</div>
 	</div>
 	{#if answers.length > 0}
@@ -83,14 +84,20 @@
 		</div>
 	{/if}
 	{#if isResponseCorrect === true}
-		<p class="mt-2 text-center text-xl font-bold text-green-600">Correct!</p>
-		<p class="mt-2 text-center text-gray-700">{answerDescription}</p>
+		<div transition:fly={{ y: -20, duration: 400, delay: 100, easing: quintOut }}>
+			<p class="mt-2 text-center text-xl font-bold text-green-600">Correct!</p>
+		</div>
+		<div transition:fade={{ duration: 200, delay: 500 }}>
+			<p class="mt-2 text-center text-gray-700">{answerDescription}</p>
+		</div>
 	{:else if isResponseCorrect === false}
-		<p class="mt-2 text-center text-xl font-bold text-red-600">Incorrect. Try again.</p>
+		<div transition:fly={{ y: -20, duration: 400, delay: 100, easing: quintOut }}>
+			<p class="mt-2 text-center text-xl font-bold text-red-600">Incorrect. Try again.</p>
+		</div>
 	{/if}
 </div>
 
-<div class="flex flex-wrap gap-4 p-2">
+<div class="mx-auto mt-4 flex flex-wrap items-center justify-center gap-4 p-2 sm:w-1/2">
 	<p class="mb-2 text-sm text-green-600">
 		Correct: {correctCount}
 	</p>
